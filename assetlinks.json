@@ -1,10 +1,8 @@
 [{
-  "relation": ["delegate_permission/common.handle_all_urls"],
-  "target": {
-    "namespace": "android_app",
-    "package_name": "io.github.johnlaz.jvox",
-    "sha256_cert_fingerprints": [
-      "14:5E:F1:10:4A:D3:BF:84:42:66:4F:03:FB:7B:61:8D:D4:D2:CF:DE:24:B4:13:E2:7A:6D:C6:BA:C1:AA:12:D1"
-    ]
-  }
-}]
+      "relation": ["delegate_permission/common.handle_all_urls"],
+      "target": {
+        "namespace": "android_app",
+        "package_name": "io.github.johnlaz.jvox",
+        "sha256_cert_fingerprints": ["8C:2C:4F:23:4C:B8:6C:96:3B:8C:BF:21:9F:20:FC:76:A6:F2:64:4D:44:5C:FC:67:79:91:B3:2F:A0:0C:7B:9A"]
+      }
+    }]
