@@ -1,16 +1,18 @@
-[{
-      "relation": ["delegate_permission/common.handle_all_urls"],
-      "target": {
-        "namespace": "android_app",
-        "package_name": "io.github.johnlaz.jvox",
-        "sha256_cert_fingerprints": ["8C:2C:4F:23:4C:B8:6C:96:3B:8C:BF:21:9F:20:FC:76:A6:F2:64:4D:44:5C:FC:67:79:91:B3:2F:A0:0C:7B:9A"]
-      }
-    }],
-[{
-      "relation": ["delegate_permission/common.handle_all_urls"],
-      "target": {
-        "namespace": "android_app",
-        "package_name": "io.github.johnlaz.armory",
-        "sha256_cert_fingerprints": ["27:1A:DB:AD:7F:D9:0B:74:EB:6C:11:36:0B:C1:21:57:C2:FF:4B:5F:16:E1:FE:FD:45:3D:56:02:94:B1:BF:17"]
-      }
-    }]
+[
+  {
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "io.github.johnlaz.jvox",
+      "sha256_cert_fingerprints": ["8C:2C:4F:23:4C:B8:6C:96:3B:8C:BF:21:9F:20:FC:76:A6:F2:64:4D:44:5C:FC:67:79:91:B3:2F:A0:0C:7B:9A"]
+    }
+  },
+  {
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "io.github.johnlaz.armory",
+      "sha256_cert_fingerprints": ["27:1A:DB:AD:7F:D9:0B:74:EB:6C:11:36:0B:C1:21:57:C2:FF:4B:5F:16:E1:FE:FD:45:3D:56:02:94:B1:BF:17"]
+    }
+  }
+]
