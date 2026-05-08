@@ -14,5 +14,21 @@
       "package_name": "io.github.johnlaz.armory",
       "sha256_cert_fingerprints": ["5A:E5:55:36:4E:98:D2:7B:43:F7:D9:D9:28:9F:D0:83:B7:0A:45:4E:C8:C2:0E:DB:90:35:DA:30:4C:F7:6B:FC"]
     }
+  },
+  {
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "io.github.johnlaz.brvty",
+      "sha256_cert_fingerprints": ["DD:0F:34:C7:BC:48:6A:E4:DE:20:3A:00:6B:8B:9C:3C:4C:A9:19:BC:54:43:4B:F5:6E:F9:39:9B:2C:53:80:C5"]
+    }
+  },
+  {
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "io.github.johnlaz.lpai",
+      "sha256_cert_fingerprints": ["62:26:08:B0:AF:63:92:EA:3E:23:62:1D:97:29:3B:7F:F4:1A:40:78:CB:59:2F:D1:9D:AB:BB:31:2F:C7:11:02"]
+    }
   }
 ]
