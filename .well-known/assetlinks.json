@@ -11,6 +11,14 @@
     "relation": ["delegate_permission/common.handle_all_urls"],
     "target": {
       "namespace": "android_app",
+      "package_name": "org.jvox.app",
+      "sha256_cert_fingerprints": ["C7:90:6D:67:A9:53:10:4E:76:F5:B9:E6:5F:30:10:51:81:8E:E9:7D:8D:74:1B:4F:72:15:EF:03:01:0F:19:F1"]
+    }
+  },
+  {
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "namespace": "android_app",
       "package_name": "io.github.johnlaz.armory",
       "sha256_cert_fingerprints": ["5A:E5:55:36:4E:98:D2:7B:43:F7:D9:D9:28:9F:D0:83:B7:0A:45:4E:C8:C2:0E:DB:90:35:DA:30:4C:F7:6B:FC"]
     }
