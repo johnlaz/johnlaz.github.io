@@ -8,14 +8,6 @@
     }
   },
   {
-"relation": ["delegate_permission/common.handle_all_urls"],
-    "target": {
-      "namespace": "android_app",
-      "package_name": "org.jvox.app.twa",
-     "sha256_cert_fingerprints": ["0E:5F:90:24:71:11:40:0B:94:EF:4C:35:B7:E2:19:D7:33:08:DD:60:6C:06:B8:37:51:DE:C4:E5:78:C3:F9:53"]
-      }
-  },
-  {
     "relation": ["delegate_permission/common.handle_all_urls"],
     "target": {
       "namespace": "android_app",
