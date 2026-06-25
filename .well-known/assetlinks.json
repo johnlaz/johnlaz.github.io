@@ -19,9 +19,9 @@
     "relation": ["delegate_permission/common.handle_all_urls"],
     "target": {
       "namespace": "android_app",
-      "package_name": "io.github.johnlaz.armory",
-      "sha256_cert_fingerprints": ["5A:E5:55:36:4E:98:D2:7B:43:F7:D9:D9:28:9F:D0:83:B7:0A:45:4E:C8:C2:0E:DB:90:35:DA:30:4C:F7:6B:FC"]
-    }
+       "package_name": "io.github.johnlaz.armory",
+    "sha256_cert_fingerprints": ["E8:1F:3D:1E:19:2C:CF:28:66:7D:DE:F1:2D:91:FE:BC:E5:F3:B9:6F:77:B6:49:C0:EA:37:E5:67:92:0A:A3:36"]
+  }
   },
   {
     "relation": ["delegate_permission/common.handle_all_urls"],
