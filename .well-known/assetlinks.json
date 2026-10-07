@@ -38,5 +38,13 @@
       "package_name": "io.github.johnlaz.lpai",
       "sha256_cert_fingerprints": ["62:26:08:B0:AF:63:92:EA:3E:23:62:1D:97:29:3B:7F:F4:1A:40:78:CB:59:2F:D1:9D:AB:BB:31:2F:C7:11:02"]
     }
+  },
+  {
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "net.brvty.app.twa",
+      "sha256_cert_fingerprints": ["F0:12:B1:91:D6:88:3E:74:4F:03:85:D0:44:83:40:EA:D5:64:0C:B0:2C:98:BD:E9:04:1D:9B:8F:63:67:B5:51"]
+    }
   }
 ]
