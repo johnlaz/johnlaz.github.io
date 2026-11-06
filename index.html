@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>LAZLAB Creations</title>
 <meta name="description" content="LAZLAB Creations — independent apps and tools.">
-<meta name="theme-color" content="#14111c">
+<meta name="theme-color" content="#16162a">
 <link rel="icon" type="image/png" href="icon-192.png">
 <link rel="apple-touch-icon" href="icon-192.png">
 <meta property="og:title" content="LAZLAB Creations">
@@ -13,27 +13,45 @@
 <meta property="og:image" content="https://johnlaz.github.io/wallpaper.jpg">
 <meta name="twitter:card" content="summary_large_image">
 <style>
-  html,body{height:100%;margin:0;background:#14111c;overflow:hidden}
-  /* Layer 1: same wallpaper, fills the whole screen (blurred on tall screens so the bars blend) */
-  .bg{position:fixed;inset:0;background:url(wallpaper.jpg) center/cover no-repeat}
-  /* Layer 2: sharp wallpaper — fills the screen on wide displays */
-  .fg{position:fixed;inset:0;display:flex;align-items:center;justify-content:center;animation:in 1.2s ease-out both}
-  .fg img{width:100%;height:100%;object-fit:cover;object-position:center;display:block}
-  /* Tall/narrow screens: zoom so the brain fills the width, fade the edges into the slate colour */
-  @media (max-aspect-ratio: 4/3){
-    .bg{background:radial-gradient(ellipse at 50% 50%,#1d1830 0%,#14111c 70%)}
-    .fg img{flex:none;width:185vw;max-width:none;height:auto;object-fit:contain;
+  :root{--stone:#16162a}
+  html,body{height:100%;margin:0;background:var(--stone);overflow:hidden}
+  h1{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}
+
+  /* Wide screens: the full photo, edge to edge */
+  .stone{display:none}
+  .scene{position:fixed;inset:0;display:flex;align-items:center;justify-content:center;animation:in 1.2s ease-out both}
+  .scene img{width:100%;height:100%;object-fit:cover;object-position:center;display:block}
+
+  /* Tall screens: stone texture fills the screen, logo zoomed so the brain fits the width */
+  @media (max-aspect-ratio: 3/2){
+    .stone{display:block;position:fixed;inset:0;background:url(wallpaper.jpg) 100% 50%/cover no-repeat;filter:brightness(.75)}
+    .scene img{flex:none;width:185vw;max-width:none;height:auto;object-fit:contain;
       -webkit-mask-image:radial-gradient(ellipse 50% 50% at 50% 50%,#000 55%,transparent 100%);
               mask-image:radial-gradient(ellipse 50% 50% at 50% 50%,#000 55%,transparent 100%)}
   }
+
+  footer{position:fixed;left:0;right:0;bottom:0;z-index:2;
+    display:flex;align-items:center;justify-content:center;gap:18px;flex-wrap:wrap;
+    padding:14px 16px calc(14px + env(safe-area-inset-bottom));
+    font:12px/1.2 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    letter-spacing:.06em;color:rgba(235,230,255,.55);
+    background:linear-gradient(to top,rgba(10,9,20,.55),transparent)}
+  footer a{color:#cfe9ff;text-decoration:none;padding:7px 14px;border:1px solid rgba(34,211,238,.45);
+    border-radius:999px;background:rgba(10,9,20,.45);transition:background .2s,border-color .2s}
+  footer a:hover,footer a:focus-visible{background:rgba(34,211,238,.18);border-color:rgba(103,232,247,.9);outline:none}
+
   @keyframes in{from{opacity:0}to{opacity:1}}
-  @media (prefers-reduced-motion:reduce){.fg{animation:none}}
-  h1{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}
+  @media (prefers-reduced-motion:reduce){.scene{animation:none}}
 </style>
 </head>
 <body>
   <h1>LAZLAB Creations</h1>
-  <div class="bg" aria-hidden="true"></div>
-  <div class="fg"><img src="wallpaper.jpg" alt="LAZLAB" width="2576" height="1405"></div>
+  <div class="stone" aria-hidden="true"></div>
+  <div class="scene"><img src="wallpaper.jpg" alt="LAZLAB" width="2576" height="1405"></div>
+  <footer>
+    <span>© <span id="y">2026</span> LAZLAB Creations</span>
+    <a href="mailto:lazlab.io@gmail.com">Contact</a>
+  </footer>
+  <script>document.getElementById('y').textContent=new Date().getFullYear()</script>
 </body>
 </html>
