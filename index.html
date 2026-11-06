@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>LAZLAB Creations</title>
+<meta name="description" content="LAZLAB Creations — independent apps and tools.">
+<meta name="theme-color" content="#040406">
+<link rel="icon" type="image/png" href="icon-192.png">
+<link rel="apple-touch-icon" href="icon-192.png">
+<meta property="og:title" content="LAZLAB Creations">
+<meta property="og:description" content="Independent apps and tools.">
+<meta property="og:image" content="https://johnlaz.github.io/logo.png">
+<meta name="twitter:card" content="summary">
+<style>
+  html,body{height:100%;margin:0;background:#040406}
+  body{display:grid;place-items:center;min-height:100dvh;overflow:hidden}
+  .logo{
+    width:min(78vmin,560px);height:auto;aspect-ratio:1;display:block;
+    /* soft radial fade: blends into the black page, trims the image corners */
+    -webkit-mask-image:radial-gradient(circle,#000 60%,transparent 70%);
+            mask-image:radial-gradient(circle,#000 60%,transparent 70%);
+    animation:in 1.2s ease-out both;
+  }
+  @keyframes in{from{opacity:0;transform:scale(.97)}to{opacity:1;transform:none}}
+  @media (prefers-reduced-motion:reduce){.logo{animation:none}}
+</style>
+</head>
+<body>
+  <h1 style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)">LAZLAB Creations</h1>
+  <img class="logo" src="logo.png" alt="LAZLAB" width="512" height="512">
+</body>
+</html>
